@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <h1>Tu segundazo</h1>
+    <table class="table table-bordered">
+      <thead class="thead-dark">
+        <tr>
+        <th scope="col">#</th>
+        <th scope="col">Marca</th>
+        <th scope="col">Linea</th>
+        <th scope="col">Modelo</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let car of cars">
+          <th scope="row">{{car.id}}</th>
+          <td >{{car.marca}}</td>
+          <td >{{car.linea}}</td>
+          <td >{{car.modelo}}</td>
+        </tr>
+    </tbody>
+  </table>
+  <div *ngFor="let marca of cars_count | keyvalue">
+    <a>Total {{marca.key}}: {{marca.value}}</a>
+  </div>
+  </div>
+
+  <footer class="text-center text-lg-start">
+    <!-- Copyright -->
+    <div class="text-center p-3">
+      Contact Us: +57 800800 - info@tusegundazo.com - @tusegundazo
+      <!-- <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a> -->
+    </div>
+    <!-- Copyright -->
+  </footer>
+</div>
